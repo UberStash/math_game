@@ -12,5 +12,24 @@ class Game
   end
 
   
+
+  def createQuestion
+    @question = Question.new
+    if @player1.turn
+      puts "#{@player2.name}: #{@question.question}"  
+    else 
+      puts "#{@player1.name}: #{@question.question}"  
+    end
+  end
+
+
+
+
+  def nextTurn
+    createQuestion
+   
+  end
+
+
 end
 
