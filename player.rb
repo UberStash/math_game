@@ -4,7 +4,7 @@ class Player
 
   def initialize(name)
     @name = name
-    @current_lives = 3
+    @lives = 3
     @turn = false
   end
 
